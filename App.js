@@ -12,14 +12,10 @@ const initialState = {
   workouts: [
     {name: "Gym", duration: 30, caloriesBurned: 100}
   ],
-  meals: []
+  meals: [
+    {name: "Breakfast", calories: 100}
+  ]
 } 
-
-const obj = {
-  meals: {
-    calories: 2035
-  }
-}
 
 
 

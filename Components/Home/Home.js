@@ -15,16 +15,14 @@ const Home = (props) => {
             </TouchableOpacity>
             <TouchableOpacity 
                 style={styles.calories}
-                onPress={() => props.navigation.navigate("Details")}
+                onPress={() => props.navigation.navigate("Calories")}
                 >
                 <Text style={styles.text}>Calories</Text>
             </TouchableOpacity>
-            <Text>{props.calories}</Text>
-            <TouchableOpacity 
-                style={{width: 100, height: 100, backgroundColor: 'yellow'}} 
-                onPress={() => props.increaseCalories(caloriesForMeal)}>
-
-            </TouchableOpacity>
+            <Text>Total Calories Eaten: {props.calories}</Text>
+            <Text>Total Calories Burned: {props.caloriesBurned}</Text>
+            <Text>Total Calories: {props.calories - props.caloriesBurned} </Text>
+            
             <StatusBar style="auto" />
         </View>
     );
@@ -32,19 +30,19 @@ const Home = (props) => {
 
 function mapStateToProps(state){
     return{
-        calories: state.calories
+        calories: state.calories,
+        caloriesBurned: state.caloriesBurned
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return{
-        increaseCalories : (caloriesForMeal) => dispatch({type: 'INCREASE_CALORIES', add: caloriesForMeal}),
-        decreaseCalories : () => dispatch({type: 'DECREASE_CALORIES'})
-    }
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return{
+//         increaseCalories : (caloriesForMeal) => dispatch({type: 'INCREASE_CALORIES', add: caloriesForMeal})
+//     }
+// }
 
 // export default Home;
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps)(Home);
 
 const styles = StyleSheet.create({
     container: {
