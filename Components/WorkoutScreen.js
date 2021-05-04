@@ -23,7 +23,7 @@ const WorkOutScreen = (props) => {
         <SafeAreaView style={styles.container}>
             <Text>Calories Burned: {props.caloriesBurned}</Text>
             <TouchableOpacity style={styles.addNewWorkout} onPress={() => props.navigation.navigate("AddNewWorkout")}>
-                <Text style={{fontWeight: 'bold', color: 'white'}}>Add New Workout</Text>
+                <Text style={{ fontWeight: 'bold', color: 'white' }}>Add New Workout</Text>
             </TouchableOpacity>
 
             <FlatList
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 32,
     },
-    addNewWorkout:{
+    addNewWorkout: {
         width: "80%",
         alignSelf: 'center',
         alignItems: 'center',

@@ -13,17 +13,19 @@ import Details from '../Components/Details/Details';
 const Stack = createStackNavigator();
 
 
-export default Routes = () => {
-    return (
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="WorkoutScreen" component={WorkoutScreen} />
-          <Stack.Screen name="AddNewWorkout" component={AddNewWorkout} />
-          <Stack.Screen name="Details" component={Details} />
-          <Stack.Screen name="Calories" component={Calories}/>
-          <Stack.Screen name="AddMeal" component={AddMeal}/>
-        </Stack.Navigator>
-      </NavigationContainer>
-    );
-  }
+const Routes = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="WorkoutScreen" component={WorkoutScreen} />
+        <Stack.Screen name="AddNewWorkout" component={AddNewWorkout} />
+        <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Calories" component={Calories} />
+        <Stack.Screen name="AddMeal" component={AddMeal} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default Routes;
