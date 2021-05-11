@@ -30,7 +30,10 @@ const reducer = (state = initialState, action) => {
         ...state,
         workouts: [...state.workouts, action.workout], caloriesBurned: state.caloriesBurned + action.workout.caloriesBurned}
     case 'ADD_MEAL':
-      return {meals: state.meals.push(action.meal), calories: state.calories + action.meal.calories}
+      console.log(action.meal);
+      return {
+        ...state,
+        meals: [...state.meals, action.meal], calories: state.calories + action.meal.calories}
   }
   return state;
 }

@@ -48,7 +48,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         // addWorkout: (name, duration)
         addWorkout: (nameOfWorkout, duration, caloriesBurned) => dispatch({ type: 'ADD_WORKOUT', workout: {name: nameOfWorkout, duration: duration, caloriesBurned: caloriesBurned}}),
-        decreaseCalories: () => dispatch({ type: 'DECREASE_CALORIES' })
+        // decreaseCalories: () => dispatch({ type: 'DECREASE_CALORIES' })
     }
 }
 
