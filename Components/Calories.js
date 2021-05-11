@@ -22,7 +22,9 @@ const Calories = (props) => {
     const [caloriesForMeal, setCaloriesForMeal] = useState(20);
     return (
         <SafeAreaView style={styles.container}>
-            <Text>Calories Eaten: {props.calories}</Text>
+            <View style={{margin: 20, height: 50, width: '60%', borderRadius: 7, alignSelf: 'center', justifyContent: 'center', backgroundColor: '#0096FF'}}>
+                <Text style={styles.caloriesConsumed}>Calories Consumed: {props.calories}</Text>
+            </View>
             <TouchableOpacity style={styles.addNewWorkout} onPress={() => props.navigation.navigate("AddMeal")}>
                 <Text style={{ fontWeight: 'bold', color: 'white' }}>Add New Meal</Text>
             </TouchableOpacity>
@@ -63,6 +65,10 @@ const styles = StyleSheet.create({
         // alignItems: 'center',
         // justifyContent: 'center',
     },
+    caloriesConsumed: {
+        margin: 10,
+        alignSelf: 'center',
+    },  
     workout: {
         alignSelf: 'center',
         alignItems: 'center',
