@@ -13,7 +13,7 @@ const Details = (props) => {
 
     switch(typeofWorkout){
         case 'GYM':
-            caloriesBurned = 0.5 * durationOfWorkout
+            caloriesBurned = 0.7 * durationOfWorkout
     }
 
     console.log(caloriesBurned);

@@ -21,7 +21,10 @@ const WorkOutScreen = (props) => {
     const [caloriesForMeal, setCaloriesForMeal] = useState(20);
     return (
         <SafeAreaView style={styles.container}>
-            <Text>Calories Burned: {props.caloriesBurned}</Text>
+            <View style={[{margin: 20, height: 50, width: '60%', borderRadius: 7, alignSelf: 'center', justifyContent: 'center', backgroundColor: '#303030', shadowColor: '#00000', shadowOffset: {width: 4, height: 4}, shadowOpacity: 0.4, shadowRadius: 7, elevation: 10}]}>
+                <Text style={styles.caloriesConsumed}>Calories Burned: {props.caloriesBurned}</Text>
+            </View>
+        
             <TouchableOpacity style={styles.addNewWorkout} onPress={() => props.navigation.navigate("AddNewWorkout")}>
                 <Text style={{ fontWeight: 'bold', color: 'white' }}>Add New Workout</Text>
             </TouchableOpacity>
@@ -93,11 +96,24 @@ const styles = StyleSheet.create({
         fontSize: 32,
     },
     addNewWorkout: {
-        width: "80%",
+        width: "60%",
         alignSelf: 'center',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'red',
-        height: 100
-    }
+        backgroundColor: '#E34234',
+        height: 100,
+        borderRadius: 10,
+        shadowColor: '#000000', 
+        shadowOffset: {width: 4, height: 4}, 
+        shadowOpacity: 0.4, 
+        shadowRadius: 7, 
+        elevation: 10
+    },
+    caloriesConsumed: {
+        margin: 10,
+        alignSelf: 'center',
+        color: 'white',
+        fontSize: 15,
+        fontWeight: 'bold'
+    }, 
 });

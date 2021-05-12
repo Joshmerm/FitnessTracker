@@ -9,17 +9,52 @@ const AddNewWorkout = (props) => {
     // const [, setNameOfWorkout] = useState("");
     return (
         <ScrollView>
-            <TouchableOpacity style={styles.workout} onPress={() => {
+            <TouchableOpacity style={[styles.workout, {backgroundColor: '#FFA500'}]} onPress={() => {
                     // props.navigation.setParams({typeofWorkout: 'GYM'}),
                     props.navigation.navigate('Details', {typeofWorkout: 'GYM'})} 
                 }>
-                <Text style={{fontWeight: 'bold', color: 'white'}}>
-                    GAINS BROOO!!!!!!
+                <Text style={{fontSize: 30, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    GYM
+                </Text>
+                <Text style={{fontSize: 10, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    2 Calories Per Minute
                 </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.workout} onPress={() => {}} >
+            <TouchableOpacity style={[styles.workout, {backgroundColor: '#9370DB'}]} onPress={() => {
+                    // props.navigation.setParams({typeofWorkout: 'GYM'}),
+                    props.navigation.navigate('Details', {typeofWorkout: 'RUNNING'})} 
+                }>
+                <Text style={{fontSize: 30, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    RUNNING
+                </Text>
+                <Text style={{fontSize: 10, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    6 Calories Per Minute
+                </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={[styles.workout, {backgroundColor: '#00ff00'}]} onPress={() => {
+                    // props.navigation.setParams({typeofWorkout: 'GYM'}),
+                    props.navigation.navigate('Details', {typeofWorkout: 'BIKING'})} 
+                }>
+                <Text style={{fontSize: 30, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    BIKING
+                </Text>
+                <Text style={{fontSize: 10, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    3.5 Calories Per Minute
+                </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={[styles.workout, {backgroundColor: '#0096FF'}]} onPress={() => {
+                    // props.navigation.setParams({typeofWorkout: 'GYM'}),
+                    props.navigation.navigate('Details', {typeofWorkout: 'SWIMMING'})} 
+                }>
+                <Text style={{fontSize: 30, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    SWIMMING
+                </Text>
+                <Text style={{fontSize: 10, fontWeight: 'bold', fontWeight: 'bold', color: 'white',}}>
+                    3 Calories Per Minute
+                </Text>
+            </TouchableOpacity>
+            <View style={{marginBottom: 100}}/>
 
-            </TouchableOpacity> 
         </ScrollView>
         // <TouchableWithoutFeedback style={{width: '100%', height: '100%'}} onPress={Keyboard.dismiss}>
         //     <TextInput style={{ width: '80%', height: 100, backgroundColor: 'yellow' }} onChangeText={setNameOfWorkout} value={nameOfWorkout}>
@@ -63,7 +98,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: '80%',
         height: 200,
-        backgroundColor: 'green',
         margin: 20,
+        shadowColor: '#000000', 
+        shadowOffset: {width: 4, height: 4}, 
+        shadowOpacity: 0.4, 
+        shadowRadius: 7, 
+        elevation: 10,
+        borderRadius: 17,
+        borderColor: 'blue'
     }
 });

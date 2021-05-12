@@ -102,5 +102,12 @@ const styles = StyleSheet.create({
         margin: 20,
         alignItems: 'center',
         justifyContent: 'center'
-    }
+    },
+    caloriesConsumed: {
+        margin: 10,
+        alignSelf: 'center',
+        color: 'white',
+        fontSize: 15,
+        fontWeight: 'bold'
+    }, 
 });

@@ -7,14 +7,10 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux'; 
 
 const initialState = {
-  calories: 2,
+  calories: 0,
   caloriesBurned: 0, 
-  workouts: [
-    {name: "Gym", duration: 30, caloriesBurned: 100}
-  ],
-  meals: [
-    {name: "Breakfast", calories: 100}
-  ]
+  workouts: [],
+  meals: []
 } 
 
 
