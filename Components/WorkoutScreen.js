@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 const Item = ({ name, duration }) => (
     <View style={styles.item}>
         <Text style={styles.name}>{name}</Text>
-        <Text style={styles.duration}>{duration}</Text>
+        <Text style={styles.duration}>Duration: {duration} min</Text>
     </View>
 );
 
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     item: {
-        backgroundColor: '#f9c2ff',
+        backgroundColor: '#B0C4DE',
         padding: 20,
         marginVertical: 8,
         marginHorizontal: 16,
@@ -102,6 +102,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#E34234',
         height: 100,
+        marginBottom: 20,
         borderRadius: 10,
         shadowColor: '#000000', 
         shadowOffset: {width: 4, height: 4}, 
@@ -116,4 +117,13 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold'
     }, 
+    name: {
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: 20
+    },
+    duration: {
+        color: 'white',
+        fontWeight: '600'
+    }
 });

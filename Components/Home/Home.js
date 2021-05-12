@@ -30,6 +30,11 @@ const Home = (props) => {
                     <Text style={styles.text}>Calories</Text>
                 </TouchableOpacity>
             </View>
+            <View style={{alignItems: 'center', marginTop: 20,}}>
+                <Text style={styles.big}>Created By Group 2</Text>
+                <Text style={{fontSize: 15, fontWeight: '800'}}>Karen Kazaryan, Josh Mermelstein</Text>
+                <Text style={{fontSize: 10}}>John Rodriguez, Robin Mok</Text>
+            </View>
 
             <StatusBar style="auto" />
         </View>
@@ -89,5 +94,9 @@ const styles = StyleSheet.create({
         fontWeight: '500',
         fontSize: 30,
         color: 'white'
+    },
+    big: {
+        fontSize: 30,
+        fontWeight: 'bold'
     }
 });
