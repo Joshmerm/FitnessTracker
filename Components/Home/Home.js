@@ -33,7 +33,7 @@ const Home = (props) => {
             <View style={{alignItems: 'center', marginTop: 20,}}>
                 <Text style={styles.big}>Created By Group 2</Text>
                 <Text style={{fontSize: 15, fontWeight: '800'}}>Karen Kazaryan, Josh Mermelstein</Text>
-                <Text style={{fontSize: 10}}>John Rodriguez, Robin Mok</Text>
+                <Text style={{fontSize: 15, fontWeight: '800'}}>John Rodriguez, Robin Mok</Text>
             </View>
 
             <StatusBar style="auto" />
