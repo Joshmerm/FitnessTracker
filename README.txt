@@ -7,11 +7,14 @@ Utilizes:
 https://reactnavigation.org/docs/stack-navigator/
 https://callstack.github.io/react-native-paper/
 
-To Install, Run This In Order:
+To Install And Run, Do This In Order:
+Create New Expo React-Native Project
+Place Navigation & Componenets Folder in the route folder.  Then replace App.js With This New App.js
+Then Install The Following 
 npm install @react-navigation/native
 expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 npm install @react-navigation/stack
-
+Then Run
 
 Requirements Fulfilled:
 Javscript
