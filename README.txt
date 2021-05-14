@@ -3,7 +3,17 @@ The fitness tracker is a react native application that aims to keep track of how
 many calories you gain from eating meals and how many calories you lose from doing workouts by logging in the details of 
 each meal or workout then it tallies up how many calories you gained and burned total.
 
-Requirements:
+Utilizes:
+https://reactnavigation.org/docs/stack-navigator/
+https://callstack.github.io/react-native-paper/
+
+To Install, Run This In Order:
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm install @react-navigation/stack
+
+
+Requirements Fulfilled:
 Javscript
 Utilizes useState(functional components)
 Utilizes react Native using Expo
