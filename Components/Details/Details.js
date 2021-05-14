@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { Keyboard, StyleSheet, Text, View, ScrollView } from 'react-native';
+import { Keyboard, StyleSheet, Text, View, ScrollView, Alert } from 'react-native';
 import { TouchableOpacity, TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { connect } from 'react-redux';
 import { TextInput } from 'react-native-paper';
