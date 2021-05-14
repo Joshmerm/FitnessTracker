@@ -10,6 +10,13 @@ Install with [yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 ### Run
 `yarn start`
 
+### Description
+The fitness tracker is a react native application that aims to keep track of how \
+many calories you gain from eating meals and how many calories you lose from doing workouts by logging in the details of \
+each meal or workout then it tallies up how many calories you gained and burned total.\
+
+### For In Deptch Description Refer To [ReadMe.txt](https://github.com/Joshmerm/FitnessTracker/blob/main/README.txt) 
+
 ### Using Git Flow For Team, Use This
 Use This [Video](https://www.youtube.com/watch?v=jhtbhSpV5YA) For Reference<br><br>
 Use The Following Command to create a branch, this will also switch over to the newly created branch\

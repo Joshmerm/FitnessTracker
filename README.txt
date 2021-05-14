@@ -22,4 +22,11 @@ The user starts off the on home page, home page will display calories eaten, cal
 It will also have two buttons, one for the workouts, and one for calories
 
 Workouts Page:
-Can view all workouts, as well as total calories burned.  Click on add new workout to use a preset of workouts, then name it, add in duration (in minutes)
+Can view all workouts, as well as total calories burned.  Click on add new workout to use a preset of workouts(calories burned per minute), then name it, add in duration (in minutes i.e. 20)
+It will now pop back to workoutscreen where you can View all workouts(including the newly added one)
+
+Calories Page:
+Can view all meals with calorie information.  Add new meal, input the name of the meal (i.e. Breakfast) and calories for that meal (i.e. 500)
+Once submitted, it will pop back to Calories page and display all meals(including the newly added one)
+
+Pop back to home screen to get an overall health picture of what the day has looked like, you will see Total calories which includes all meals, and all workouts.
